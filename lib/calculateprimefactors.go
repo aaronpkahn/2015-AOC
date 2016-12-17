@@ -2,10 +2,6 @@
 // of sieve.go in Go source distribution.
 package lib
 
-import (
-	"fmt"
-)
-
 // Generate numbers until the limit max.
 // after the 2, all the prime numbers are odd
 // Send a channel signal when the limit is reached
@@ -42,10 +38,4 @@ func CalcPrimeFactors(number_to_factorize int) []int {
 		ch = ch1
 	}
 	return rv
-}
-
-func main() {
-	fmt.Println(CalcPrimeFactors(699))
-	fmt.Println(CalcPrimeFactors(1233))
-	fmt.Println(CalcPrimeFactors(9876))
 }
